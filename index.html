@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waziristan Bedsheet - Premium Quality Bedsheets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a1a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #d4a574;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #d4a574;
+            font-family: 'Playfair Display', serif;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d4a574;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #d4a574;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #d4a574;
+            color: #0f0f0f;
+        }
+
+        .btn-primary:hover {
+            background-color: #e8b88a;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #d4a574;
+            border: 2px solid #d4a574;
+        }
+
+        .btn-secondary:hover {
+            background-color: #d4a574;
+            color: #0f0f0f;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.2);
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background-color: #0f0f0f;
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #d4a574;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 4rem 0;
+            background-color: #1a1a1a;
+        }
+
+        .products h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #d4a574;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.3);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            color: #d4a574;
+            padding: 1rem 1rem 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .product-card p {
+            color: #cccccc;
+            padding: 0 1rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background-color: #0f0f0f;
+        }
+
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #d4a574;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-item h3 {
+            color: #d4a574;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-item p {
+            color: #cccccc;
+            font-size: 0.95rem;
+        }
+
+        .info-item a {
+            color: #d4a574;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #d4a574;
+            color: #999999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 2rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-button {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🛏️ Waziristan Bedsheet</div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Comfort Woven Into Every Thread</h1>
+            <p>Premium quality bedsheets, pillows, curtains, and traditional Qalins</p>
+            <div class="hero-buttons">
+                <a href="https://www.instagram.com/waziristan_bedsheet007?utm_source=qr" target="_blank" class="btn btn-primary">Visit Instagram</a>
+                <a href="https://www.tiktok.com/@waziristan_bedsheet?_r=1&_t=ZS-97B8K4YnJuX" target="_blank" class="btn btn-secondary">Follow TikTok</a>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1540932239986-310128078ceb?w=600&h=400&fit=crop" alt="Premium Bedsheets">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Waziristan Bedsheet</h2>
+            <p>We are a family-owned business dedicated to providing the highest quality bedding products directly to our customers. With years of experience in textile manufacturing, we ensure every product meets our strict quality standards.</p>
+            <p>From premium bedsheets to elegant curtains and traditional Qalins, we offer a complete range of home textiles that combine comfort, durability, and style.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Collections</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=300&h=300&fit=crop" alt="Premium Bedsheets">
+                    <h3>Premium Bedsheets</h3>
+                    <p>Luxurious cotton bedsheets with superior comfort and durability</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1584622181563-430f63602d4b?w=300&h=300&fit=crop" alt="Luxury Pillows">
+                    <h3>Luxury Pillows</h3>
+                    <p>Comfortable and supportive pillows for a perfect night's sleep</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1572410239178-dfa694794dbb?w=300&h=300&fit=crop" alt="Elegant Curtains">
+                    <h3>Elegant Curtains</h3>
+                    <p>Beautiful curtains that add style and elegance to any room</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1595521624277-c7a6b0a8e8e1?w=300&h=300&fit=crop" alt="Traditional Qalins">
+                    <h3>Traditional Qalins</h3>
+                    <p>Handwoven traditional rugs that bring warmth to your home</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>📍 Address</h3>
+                    <p>Chacha Karim Bakhsh Plaza<br>Cheena Market, Mingora<br>Swat, Pakistan</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p>Shop: 0946-724856</p>
+                </div>
+                <div class="info-item">
+                    <h3>📱 Mobile</h3>
+                    <p>Saifullah: 0348-9120388<br>Ihsan: 0336-9804945<br>Ismail: 0314-9701680</p>
+                </div>
+                <div class="info-item">
+                    <h3>🌐 Follow Us</h3>
+                    <p>
+                        <a href="https://www.instagram.com/waziristan_bedsheet007?utm_source=qr" target="_blank">Instagram</a> | 
+                        <a href="https://www.tiktok.com/@waziristan_bedsheet?_r=1&_t=ZS-97B8K4YnJuX" target="_blank">TikTok</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/923489120388" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">💬</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Waziristan Bedsheet. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
